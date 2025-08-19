@@ -17,8 +17,8 @@ source "amazon-ebs" "rhel9_ansible" {
 }
 
 build {
-  name    = "learn-packer"
+  name    = "golden-image-ansible"
   sources = [
-    "source.amazon-ebs.ubuntu"
+    "source.amazon-ebs.rhel9_ansible"
   ]
 }
